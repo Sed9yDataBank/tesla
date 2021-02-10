@@ -25,7 +25,8 @@ type User struct {
 	Email      string             `json:"email" bson:"email,omitempty"`
 	TeslaModel string             `json:"teslamodel" bson:"teslamodel,omitempty"`
 	Location   string             `json:"location" bson:"location,omitempty"`
-	Enabled    bool               `json:"enabled" bson:"enabled,omitempty"`
+	//Enabled is nil
+	Enabled *bool `json:"enabled" bson:"enabled,omitempty"`
 }
 
 type Subreddit struct {
